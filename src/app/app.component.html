@@ -1,0 +1,16 @@
+<div *ngIf="gameOn"  class="container">
+  <div *ngFor="let cellArray of cells; let i = index" class="cells-row">
+    <app-cell *ngFor="let cell of cells[i]; let j = index"
+    [active]="cells[i][j].isActive"
+    [isHead]="cells[i][j].isStart"
+    [food]="cells[i][j].food"></app-cell>
+  </div>
+  <div class="score">Score: {{score}}</div>
+</div>
+
+<div *ngIf="!gameOn" class="dashboard">
+  <h2>SNAKE</h2>
+  <button (click)="start()" class="btn">Start</button>
+  <div *ngIf="!neverStarted" >GAME OVER</div>
+  <div *ngIf="!neverStarted"> Your Score: {{ score }}</div>
+</div>

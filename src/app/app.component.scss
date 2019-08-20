@@ -1,0 +1,42 @@
+.cells-row {
+  width:400px;
+}
+
+.container {
+  width: 90vw;
+  height: 90vh;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+}
+
+.dashboard {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  border:1px solid #ccc;
+  background: #fff;
+  text-align: center;
+  .btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+}
+
+.btn {
+  border: 1px solid #ccc;
+  background: linear-gradient(lightblue, blue);
+  color: #FFF;
+  padding: 10px;
+  min-width: 100px;
+}
+
+.score{
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+}
